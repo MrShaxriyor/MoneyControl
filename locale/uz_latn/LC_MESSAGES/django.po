@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-16 19:35+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+#: .\conf\settings.py:142
+msgid "Uzbek"
+msgstr ""
+
+#: .\conf\settings.py:143
+msgid "Russian"
+msgstr ""
+
+#: .\conf\settings.py:144
+msgid "English"
+msgstr ""
+
+msgid "Logout"
+msgstr "Chiqish"
+
+msgid "settings"
+msgstr "Sozlamalar"
+
+msgid "Home"
+msgstr "Bosh sahifa"
+
+msgid "Hello"
+msgstr "Salom"
+
+msgid "Kategoriya Bo‘yicha chiqimlar"
+msgstr "Kategoriya bo‘yicha chiqimlar"
+
+msgid "Ovqat"
+msgstr "Ovqat"
+
+msgid "Uy"
+msgstr "Uy"
+
+msgid "Umumiy Tranzaksiya"
+msgstr "Umumiy tranzaksiya"
+
+msgid "Menyu"
+msgstr "Menyu"
+
+msgid "Kirim"
+msgstr "Kirim"
+
+msgid "Chiqim"
+msgstr "Chiqim"
+
+msgid "Oylik Trend"
+msgstr "Oylik trend"
+
+msgid "Bugungi kirim"
+msgstr "Bugungi kirim"
+
+msgid "Bugungi chiqim"
+msgstr "Bugungi chiqim"
+
+msgid "Bugungi kirim summasini kiriting, category va izoh tanlang."
+msgstr "Bugungi kirim summasini kiriting, kategoriya va izoh tanlang."
+
+msgid "Category tanlang"
+msgstr "Kategoriya tanlang"
+
+msgid "Savdo"
+msgstr "Savdo"
+
+msgid "Bugungi kirimlar"
+msgstr "Bugungi kirimlar"
+
+msgid "Kategoriya"
+msgstr "Kategoriya"
+
+msgid "Summa"
+msgstr "Summa"
+
+msgid "Izoh yozing"
+msgstr "Izoh yozing"
+
+msgid "Saqlash"
+msgstr "Saqlash"
+
+msgid "Categorylar"
+msgstr "Kategoriyalar"
+
+msgid "Qo'shish"
+msgstr "Qo‘shish"
+
+msgid "Category nomi"
+msgstr "Kategoriya nomi"
+
+msgid "Orqaga"
+msgstr "Orqaga"
+
+msgid "Sana"
+msgstr "Sana"
+

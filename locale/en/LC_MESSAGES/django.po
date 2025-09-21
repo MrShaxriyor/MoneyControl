@@ -1,0 +1,160 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-16 19:43+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+#: .\conf\settings.py:142
+msgid "Uzbek"
+msgstr ""
+
+#: .\conf\settings.py:143
+msgid "Russian"
+msgstr ""
+
+    #: .\conf\settings.py:144
+msgid "English"
+msgstr ""
+
+msgid "Bugungi Kirim"
+msgstr "Today's Income"
+
+msgid "Bugungi Chiqim"
+msgstr "Today's Expense"
+
+msgid "Joriy Balans"
+msgstr "Current Balance"
+
+msgid "Chiqish"
+msgstr "Logout"
+
+msgid "Sozlamalar"
+msgstr "settings"
+
+msgid "Bosh sahifa"
+msgstr "Home"
+
+msgid "Salom"
+msgstr "Hello"
+
+
+msgid "Kategoriya Bo‘yicha chiqimlar"
+msgstr "Expenses by category"
+
+msgid "Ovqat"
+msgstr "Eat"
+
+msgid "Uy"
+msgstr "House"
+
+msgid "Umumiy Tranzaksiya"
+msgstr "General Transaction"
+
+msgid "Menyu"
+msgstr "Menu"
+
+msgid "Kirim"
+msgstr "Income"
+
+msgid "Chiqim"
+msgstr "Expence"
+
+msgid "Oylik Trend"
+msgstr"Month Trend"
+
+msgid "Bugungi kirim"
+msgstr "Today income"
+
+
+msgid "Bugungi chiqim"
+msgstr "Today Expence"
+
+msgid "Bugungi kirim summasini kiriting, category va izoh tanlang."
+msgstr "Enter today's income amount, select a category and a comment."
+
+msgid "Category tanlang"
+msgstr "Inter Category"
+
+msgid "Savdo"
+msgstr "Shop"
+
+msgid "Bugungi kirimlar"
+msgstr "Today incomes"
+
+msgid "Kategoriya"
+msgstr "Category"
+
+msgid "Summa"
+msgstr "Amount"
+
+msgid "Izoh yozing"
+msgstr "write Note"
+
+msgid "Saqlash"
+msgstr "Save"
+
+msgid "Categorylar"
+msgstr "Categorys"
+
+msgid "Qo'shish"
+msgstr "Join"
+
+msgid "Category nomi"
+msgstr "Category name"
+
+msgid "Orqaga"
+msgstr "Back"
+
+msgid "Sana"
+msgstr "Date"
+
+
+
+
+msgid "Moliyaviy boshqaruvni osonlashtiring"
+msgstr "Make financial management easier"
+
+msgid "Kuzatuv"
+msgstr "Tracking"
+
+msgid "Tahlil"
+msgstr "Analysis"
+
+msgid "Xavfsizlik"
+msgstr "Security"
+
+msgid "Finans Dashboard orqali daromad va xarajatlaringizni kuzatib boring."
+msgstr "Track your income and expenses through the Finance Dashboard."
+
+msgid "Kirim va chiqimlaringizni real vaqtda kuzatib boring."
+msgstr "Track your income and expenses in real time."
+
+
+msgid "Grafiklar orqali moliyaviy faoliyatingizni tahlil qiling."
+msgstr "Analyze your financial activity through graphs."
+
+
+msgid "Ma’lumotlaringiz xavfsiz va himoyalangan."
+msgstr "Your data is safe and secure."
+
+msgid "biz haqimizda"
+msgstr "about Us"
+
+
+
+
+
+

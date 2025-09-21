@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #121212;
+    color: #e0e0e0;
+    display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 220px;
+    background-color: #1f1f1f;
+    height: 100vh;
+    padding: 20px;
+    box-shadow: 2px 0 8px rgba(0,0,0,0.5);
+}
+.sidebar h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+.sidebar ul li {
+    padding: 15px 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    transition: background 0.3s;
+}
+.sidebar ul li:hover, .sidebar ul li.active {
+    background-color: #333;
+}
+
+/* Main content */
+.main-content {
+    flex: 1;
+    padding: 40px;
+}
+.main-content h1 {
+    margin-bottom: 30px;
+    font-size: 28px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* Filter Form */
+.filter-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+.filter-form input,
+.filter-form select,
+.filter-form button {
+    padding: 10px 12px;
+    border-radius: 8px;
+    border: none;
+    background-color: #2a2a2a;
+    color: #e0e0e0;
+}
+.filter-form button {
+    background-color: #6200ee;
+    cursor: pointer;
+}
+.filter-form button:hover {
+    background-color: #4500b5;
+}
+
+/* Table */
+.transaction-table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #1e1e1e;
+    border-radius: 12px;
+    overflow: hidden;
+}
+.transaction-table th, .transaction-table td {
+    padding: 12px;
+    text-align: left;
+}
+.transaction-table th {
+    background-color: #2a2a2a;
+}
+.transaction-table tbody tr:nth-child(even) {
+    background-color: #232323;
+}
+.transaction-table tfoot td {
+    background-color: #2a2a2a;
+    font-weight: bold;
+}
+
+/* Category color (just label) */
+.category {
+    font-weight: 600;
+}
+
+/* Summa color */
+.income {
+    color: #00e676;
+    font-weight: bold;
+}
+.expense {
+    color: #ff5252;
+    font-weight: bold;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .sidebar {
+        display: none;
+    }
+    .main-content {
+        padding: 20px;
+    }
+    .filter-form {
+        flex-direction: column;
+        gap: 10px;
+    }
+}

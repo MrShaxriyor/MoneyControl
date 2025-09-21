@@ -1,0 +1,80 @@
+{% load i18n %}
+{% load static %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="UTF-8">
+  <title>📝 {% trans "Ro'yxatdan o'tish" %}</title>
+  <link rel="stylesheet" href="{% static 'css/register.css' %}">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+{% if messages %}
+  <div id="toast-container" style="position: fixed; top: 20px; right: 20px; z-index: 9999; width: 320px;">
+    {% for message in messages %}
+      <div 
+        class="shadow-lg rounded-xl mb-3 text-white d-flex align-items-center" 
+        style="
+          padding: 12px 16px;
+          {% if message.tags == 'success' %} background:#28a745; 
+          {% elif message.tags == 'error' %} background:#dc3545; 
+          {% elif message.tags == 'warning' %} background:#ffc107; color:#222;
+          {% else %} background:#007bff;
+          {% endif %}
+        ">
+        {% if message.tags == "success" %}
+          ✅
+        {% elif message.tags == "error" %}
+          ❌
+        {% elif message.tags == "warning" %}
+          ⚠️
+        {% else %}
+          ℹ️
+        {% endif %}
+        <span class="ms-2">{{ message }}</span>
+      </div>
+    {% endfor %}
+  </div>
+{% endif %}
+
+
+
+  <div class="register-container">
+    <h1>💻 {% trans "Ro'yxatdan o'tish" %}</h1>
+    <p>{% trans "Hisobingizni yaratish uchun quyidagilarni to'ldiring." %}</p>
+
+    <form method="POST" action="">
+      {% csrf_token %}
+      
+      <div class="input-group">
+        <i class='bx bx-user'></i>
+        <input type="text" name="username" placeholder="{% trans 'Foydalanuvchi nomi' %}" required>
+      </div>
+
+      <div class="input-group">
+        <i class='bx bx-envelope'></i>
+        <input type="email" name="email" placeholder="{% trans 'Email' %}" required>
+      </div>
+
+      <div class="input-group">
+        <i class='bx bx-lock'></i>
+        <input type="password" name="password1" placeholder="{% trans 'Parol' %}" required>
+      </div>
+
+      <div class="input-group">
+        <i class='bx bx-lock'></i>
+        <input type="password" name="password2" placeholder="{% trans 'Parolni tasdiqlash' %}" required>
+      </div>
+
+      <button type="submit">{% trans "Ro'yxatdan o'tish" %}</button>
+    </form>
+
+    <p class="login-link">
+      {% trans "Akkountingiz bor?" %} <a href="{% url "login" %}">{% trans "Kirish" %}</a>
+    </p>
+  </div>
+
+</body>
+</html>

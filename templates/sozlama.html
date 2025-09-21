@@ -1,0 +1,120 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>⚙️ {% trans "Sozlamalar" %}</title>
+    <link rel="stylesheet" href="{% static 'css/sozlama.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <h2>{% trans "Finans Dashboard" %}</h2>
+        <ul>
+            <li><a href="{% url 'dashboard' %}"><i class="ri-dashboard-line"></i> {% trans "Dashboard" %}</a></li>
+            <li><a href="{% url 'balance' %}"><i class="ri-wallet-line"></i> {% trans "Balans" %}</a></li>
+            
+            <li class="active"><a href="{% url 'sozlama' %}"><i class="ri-settings-3-line"></i> {% trans "Sozlamalar" %}</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="main-content">
+        <h1>⚙️ {% trans "Sozlamalar" %}</h1>
+
+        <!-- Tabs -->
+        <div class="tabs">
+            <button class="tab-button active" data-tab="profile"><i class="ri-user-line"></i> {% trans "Shaxsiy" %}</button>
+            <button class="tab-button" data-tab="account"><i class="ri-bank-line"></i> {% trans "Hisob" %}</button>
+            <button class="tab-button" data-tab="security"><i class="ri-shield-keyhole-line"></i> {% trans "Xavfsizlik" %}</button>
+        </div>
+
+        <!-- Tab Contents -->
+        <div class="tab-content active" id="profile">
+            <h2>{% trans "Shaxsiy ma’lumotlar" %}</h2>
+            <form class="settings-form" method="post" enctype="multipart/form-data">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="profile">
+
+                <label>{% trans "Ism" %}</label>
+                <input type="text" name="first_name" value="{{ user.first_name }}">
+
+                <label>{% trans "Familiya" %}</label>
+                <input type="text" name="last_name" value="{{ user.last_name }}">
+
+                <label>{% trans "Email" %}</label>
+                <input type="email" name="email" value="{{ user.email }}">
+
+                <label>{% trans "Telefon" %}</label>
+                <input type="tel" name="phone" value="{{ user.phone }}">
+
+                <label>{% trans "Til" %}</label>
+                <select name="language">
+                    <option value="uz" {% if user.language == "uz" %}selected{% endif %}>Uz</option>
+                    <option value="en" {% if user.language == "en" %}selected{% endif %}>En</option>
+                    <option value="ru" {% if user.language == "ru" %}selected{% endif %}>Ru</option>
+                </select>
+
+                
+
+                <button type="submit"><i class="ri-save-line"></i> {% trans "Saqlash" %}</button>
+            </form>
+        </div>
+
+        <div class="tab-content" id="account">
+            <h2>{% trans "Hisob va Valyuta" %}</h2>
+            <form class="settings-form" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="account">
+
+                <label>{% trans "Asosiy hisob" %}</label>
+                <select name="default_currency">
+                    <option value="uzs" {% if user.default_currency == "uzs" %}selected{% endif %}>UZS</option>
+                    <option value="usd" {% if user.default_currency == "usd" %}selected{% endif %}>USD</option>
+                    <option value="eur" {% if user.default_currency == "eur" %}selected{% endif %}>EUR</option>
+                </select>
+
+                <label>{% trans "Bank kartalari / Hamyonlar" %}</label>
+                <input type="text" name="wallet" value="{{ user.wallet }}">
+
+                <button type="submit"><i class="ri-save-line"></i> {% trans "Saqlash" %}</button>
+            </form>
+        </div>
+
+        <div class="tab-content" id="security">
+            <h2>{% trans "Xavfsizlik" %}</h2>
+            <form class="settings-form" method="post">
+                {% csrf_token %}
+                <input type="hidden" name="tab" value="security">
+
+                <label>{% trans "Yangi parol" %}</label>
+                <input type="password" name="new_password" placeholder="{% trans 'Yangi parol' %}">
+
+                <label>{% trans "Parolni tasdiqlash" %}</label>
+                <input type="password" name="confirm_password" placeholder="{% trans 'Parolni tasdiqlash' %}">
+
+                <button type="submit"><i class="ri-save-line"></i> {% trans "Saqlash" %}</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Tabs ishlashi
+        const tabs = document.querySelectorAll('.tab-button');
+        const contents = document.querySelectorAll('.tab-content');
+
+        tabs.forEach(tab => {
+            tab.addEventListener('click', () => {
+                tabs.forEach(t => t.classList.remove('active'));
+                tab.classList.add('active');
+
+                contents.forEach(c => c.classList.remove('active'));
+                const activeTab = document.getElementById(tab.dataset.tab);
+                activeTab.classList.add('active');
+            });
+        });
+    </script>
+</body>
+</html>

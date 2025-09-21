@@ -1,0 +1,68 @@
+{% load i18n %}
+{% load static %}
+{% get_current_language as LANGUAGE_CODE %}
+<!DOCTYPE html>
+<html lang="{{ LANGUAGE_CODE }}">
+<head>
+  <meta charset="UTF-8">
+  <title>🏠 {% trans "Bosh sahifa" %}</title>
+  <link rel="stylesheet" href="{% static 'css/index.css' %}">
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">
+      💰 <span>Finans</span>
+    </div>
+    <nav>
+      <a href="/" class="active"><i class='bx bx-home'></i> {% trans "Bosh sahifa" %}</a>
+      <a href="{% url "login" %}"><i class='bx bx-grid-alt'></i> {% trans "Dashboard" %}</a>
+      <a href="{% url "login" %}"><i class='bx bx-info-circle'></i> {% trans "Biz haqimizda" %}</a>
+      <a href="https://t.me/ShaxriyorCode"><i class='bx bx-envelope'></i> {% trans "Aloqa" %}</a>
+    </nav>
+
+    <!-- Language switcher -->
+    <div class="language-switcher">
+      <a href="/i18n/setlang/?next={{ request.path }}&language=uz">🇺🇿 UZ</a>
+      <a href="/i18n/setlang/?next={{ request.path }}&language=en">🇬🇧 EN</a>
+      <a href="/i18n/setlang/?next={{ request.path }}&language=ru">🇷🇺 RU</a>
+    </div>
+  </header>
+
+  <!-- Hero section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>{% trans "💡 Moliyaviy boshqaruvni osonlashtiring" %}</h1>
+      <p>{% trans "Finans Dashboard orqali daromad va xarajatlaringizni kuzatib boring." %}</p>
+      <a href="{% url "login" %}" class="btn"><i class='bx bx-play-circle'></i> {% trans "Boshlash" %}</a>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="feature-card">
+      <i class='bx bx-line-chart'></i>
+      <h3>{% trans "Kuzatuv" %}</h3>
+      <p>{% trans "Kirim va chiqimlaringizni real vaqtda kuzatib boring." %}</p>
+    </div>
+    <div class="feature-card">
+      <i class='bx bx-bar-chart-alt-2'></i>
+      <h3>{% trans "Tahlil" %}</h3>
+      <p>{% trans "Grafiklar orqali moliyaviy faoliyatingizni tahlil qiling." %}</p>
+    </div>
+    <div class="feature-card">
+      <i class='bx bx-shield-quarter'></i>
+      <h3>{% trans "Xavfsizlik" %}</h3>
+      <p>{% trans "Ma’lumotlaringiz xavfsiz va himoyalangan." %}</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Finans Dashboard. {% trans "Barcha huquqlar himoyalangan." %}</p>
+  </footer>
+
+</body>
+</html>

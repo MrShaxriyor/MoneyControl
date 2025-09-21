@@ -1,0 +1,83 @@
+{% load static i18n %}
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>📊 {% trans "Tranzaksiya Hisobot" %}</title>
+    <link rel="stylesheet" href="{% static 'css/history.css' %}">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+</head>
+<body>
+    <div class="sidebar">
+        <h2>{% trans "Finans Dashboard" %}</h2>
+        <ul>
+            <li><i class="ri-dashboard-line"></i> {% trans "Dashboard" %}</li>
+            <li><i class="ri-wallet-line"></i> {% trans "Balans" %}</li>
+            <li class="active"><i class="ri-file-list-3-line"></i> {% trans "Hisobot" %}</li>
+            <li><i class="ri-settings-3-line"></i> {% trans "Sozlamalar" %}</li>
+        </ul>
+    </div>
+
+    <div class="main-content">
+        <h1>📊 {% trans "Tranzaksiya Hisobot" %}</h1>
+
+        <form class="filter-form">
+            <input type="date" name="date" placeholder="{% trans 'Sana' %}">
+            <select name="category">
+                <option value="">{% trans "Barcha Kategoriyalar" %}</option>
+                <option value="food">{% trans "Ovqat" %}</option>
+                <option value="phone">{% trans "Telefon" %}</option>
+                <option value="transport">{% trans "Transport" %}</option>
+            </select>
+            <select name="account">
+                <option value="">{% trans "Barcha Hisoblar" %}</option>
+                <option value="uzs">UZS</option>
+                <option value="usd">USD</option>
+            </select>
+            <button type="submit"><i class="ri-filter-line"></i> {% trans "Filtrlash" %}</button>
+        </form>
+
+        <table class="transaction-table">
+            <thead>
+                <tr>
+                    <th>{% trans "Sana" %}</th>
+                    <th>{% trans "Kategoriya" %}</th>
+                    <th>{% trans "Hisob" %}</th>
+                    <th>{% trans "Summa" %}</th>
+                    <th>{% trans "Izoh" %}</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>2025-09-16</td>
+                    <td><span class="category">Ovqat</span></td>
+                    <td>UZS</td>
+                    <td class="income">+1,500,000</td>
+                    <td>{% trans "Oylik kirim" %}</td>
+                </tr>
+                <tr>
+                    <td>2025-09-16</td>
+                    <td><span class="category">Telefon</span></td>
+                    <td>UZS</td>
+                    <td class="expense">-50,000</td>
+                    <td>{% trans "SIM kart sotib olish" %}</td>
+                </tr>
+                <tr>
+                    <td>2025-09-16</td>
+                    <td><span class="category">Transport</span></td>
+                    <td>USD</td>
+                    <td class="expense">-20</td>
+                    <td>{% trans "Metro chiptasi" %}</td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="3" style="text-align:right"><strong>{% trans "Jami" %}:</strong></td>
+                    <td colspan="2"><strong>+1,500,000 UZS -70,000 UZS -20 USD</strong></td>
+                </tr>
+            </tfoot>
+        </table>
+    </div>
+</body>
+</html>

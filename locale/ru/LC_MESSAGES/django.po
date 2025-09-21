@@ -1,0 +1,151 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-09-16 19:43+0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && "
+"n%10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || "
+"(n%100>=11 && n%100<=14)? 2 : 3);\n"
+#: .\conf\settings.py:142
+msgid "Uzbek"
+msgstr ""
+
+#: .\conf\settings.py:143
+msgid "Russian"
+msgstr ""
+
+#: .\conf\settings.py:144
+msgid "English"
+msgstr ""
+
+msgid "Bugungi Kirim"
+msgstr "Сегодняшний доход"
+
+msgid "Bugungi Chiqim"
+msgstr "Сегодняшний расход"
+
+
+msgid "Joriy Balans"
+msgstr "Текущий баланс"
+
+msgid "Chiqish"
+msgstr "Выход"
+
+msgid "Sozlamalar"
+msgstr "Настройки"
+
+msgid "Bosh sahifa"
+msgstr "Главная"
+
+msgid "Salom"
+msgstr "Привет"
+
+msgid "Kategoriya Bo‘yicha chiqimlar"
+msgstr "Расходы по категориям"
+
+msgid "Ovqat"
+msgstr "Еда"
+
+msgid "Uy"
+msgstr "Дом"
+
+msgid "Umumiy Tranzaksiya"
+msgstr "Общая транзакция"
+
+msgid "Menyu"
+msgstr "Меню"
+
+msgid "Kirim"
+msgstr "Доход"
+
+msgid "Chiqim"
+msgstr "Расход"
+
+msgid "Oylik Trend"
+msgstr "Месячный тренд"
+
+msgid "Bugungi kirim"
+msgstr "Сегодняшний доход"
+
+msgid "Bugungi chiqim"
+msgstr "Сегодняшний расход"
+
+msgid "Bugungi kirim summasini kiriting, category va izoh tanlang."
+msgstr "Введите сумму сегодняшнего дохода, выберите категорию и комментарий."
+
+msgid "Category tanlang"
+msgstr "Выберите категорию"
+
+msgid "Savdo"
+msgstr "Торговля"
+
+msgid "Bugungi kirimlar"
+msgstr "Сегодняшние доходы"
+
+msgid "Kategoriya"
+msgstr "Категория"
+
+msgid "Summa"
+msgstr "Сумма"
+
+msgid "Izoh yozing"
+msgstr "Напишите комментарий"
+
+msgid "Saqlash"
+msgstr "Сохранить"
+
+msgid "Categorylar"
+msgstr "Категории"
+
+msgid "Qo'shish"
+msgstr "Добавить"
+
+msgid "Category nomi"
+msgstr "Название категории"
+
+msgid "Orqaga"
+msgstr "Назад"
+
+msgid "Sana"
+msgstr "Дата"
+
+
+msgid "Moliyaviy boshqaruvni osonlashtiring"
+msgstr "Сделайте финансовое управление проще"
+
+msgid "Kuzatuv"
+msgstr "Отслеживание"
+
+msgid "Tahlil"
+msgstr "Анализ"
+
+msgid "Xavfsizlik"
+msgstr "Безопасность"
+
+msgid "Finans Dashboard orqali daromad va xarajatlaringizni kuzatib boring."
+msgstr "Отслеживайте свои доходы и расходы через Финансовую Панель."
+
+msgid "Kirim va chiqimlaringizni real vaqtda kuzatib boring."
+msgstr "Отслеживайте свои доходы и расходы в реальном времени."
+
+msgid "Grafiklar orqali moliyaviy faoliyatingizni tahlil qiling."
+msgstr "Анализируйте свою финансовую активность с помощью графиков."
+
+msgid "Ma’lumotlaringiz xavfsiz va himoyalangan."
+msgstr "Ваши данные в безопасности и под защитой."
+
+msgid "biz haqimizda"
+msgstr "О нас"

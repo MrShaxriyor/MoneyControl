@@ -1,0 +1,116 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  display: flex;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 220px;
+  background-color: #1f1f1f;
+  height: 100vh;
+  padding: 20px;
+  box-shadow: 2px 0 8px rgba(0,0,0,0.5);
+}
+.sidebar .logo {
+  font-size: 22px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.sidebar nav a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 10px;
+  color: #e0e0e0;
+  border-radius: 8px;
+  margin-bottom: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+.sidebar nav a.active, .sidebar nav a:hover {
+  background-color: #333;
+}
+
+/* Main content */
+.main-content {
+  flex: 1;
+  padding: 40px;
+}
+.back-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  text-decoration: none;
+  color: #e0e0e0;
+  margin-bottom: 20px;
+}
+.category-container {
+  background-color: #1e1e1e;
+  padding: 20px;
+  border-radius: 12px;
+}
+.category-container h1 {
+  margin-top: 0;
+}
+
+/* Form */
+.input-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 15px;
+}
+.input-group input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background-color: #2a2a2a;
+  color: #e0e0e0;
+}
+button {
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+  background-color: #6200ee;
+  color: #fff;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+button:hover {
+  background-color: #4500b5;
+}
+
+/* Category ro'yxati */
+.category-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 20px;
+}
+.category-card {
+  background-color: #2a2a2a;
+  padding: 15px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1 1 200px;
+  justify-content: space-between;
+}
+.category-card i {
+  font-size: 20px;
+}
+.actions a {
+  color: #e0e0e0;
+  margin-left: 10px;
+  text-decoration: none;
+}
+.actions a:hover {
+  color: #6200ee;
+}
